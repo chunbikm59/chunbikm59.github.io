@@ -8,7 +8,7 @@ class BluetoothTerminal {
    * @param {!(number|string)} [characteristicUuid=0xFFE1] - Characteristic UUID
    * @param {string} [receiveSeparator='\n'] - Receive separator
    * @param {string} [sendSeparator='\n'] - Send separator
-   */
+   */ 
   constructor(serviceUuid = '0000ffe0-0000-1000-8000-00805f9b34fb', characteristicUuid = 0xFFE1,
       receiveSeparator = '\n', sendSeparator = '\n') {
     // Used private variables.
