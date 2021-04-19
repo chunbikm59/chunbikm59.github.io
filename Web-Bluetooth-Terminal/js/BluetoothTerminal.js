@@ -9,7 +9,7 @@ class BluetoothTerminal {
    * @param {string} [receiveSeparator='\n'] - Receive separator
    * @param {string} [sendSeparator='\n'] - Send separator
    */
-  constructor(serviceUuid = 0xFFE1, characteristicUuid = 0xFFE1,
+  constructor(serviceUuid = '0000ffe0-0000-1000-8000-00805f9b34fb', characteristicUuid = '0000ffe1-0000-1000-8000-00805f9b34fb',
       receiveSeparator = '\n', sendSeparator = '\n') {
     // Used private variables.
     this._receiveBuffer = ''; // Buffer containing not separated data.
@@ -242,8 +242,8 @@ class BluetoothTerminal {
     this._log('Requesting bluetooth device...');
 
     return navigator.bluetooth.requestDevice({
-      //filters: [{services: [this._serviceUuid]}],
-	  filters: [{name: 'Mini-Bot'}],
+      filters: [{services: [this._serviceUuid]},{name: 'Mini-Bot'}],
+	  //filters: [{name: 'Mini-Bot'}],
 	   
     }).
         then((device) => {
