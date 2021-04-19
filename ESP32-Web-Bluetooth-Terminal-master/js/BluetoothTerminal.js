@@ -261,25 +261,18 @@ class BluetoothTerminal {
 
     this._log('Requesting bluetooth device... with service1 ' + this._serviceUuid);
 	
+    return navigator.bluetooth.requestDevice({
+		
+	  filters: [{
+        name: 'Mini-Bot'
+      }],
+      optionalServices: ['fda50693-a4e2-4fb1-afcf-c6eb07647825',
+	  0xFFE1
+	  ]
 
-	//////////////////
-
-  let options = {filters: [{name: 'Mini-Bot'}]};
-
-  bluetoothDevice = null;
-  log('Requesting Bluetooth Device...');
-  navigator.bluetooth.requestDevice(options)
-  .then(device => {
-    bluetoothDevice = device;
-    bluetoothDevice.addEventListener('gattserverdisconnected', onDisconnected);
-    return bluetoothDevice;
-  })
-  .catch(error => {
-    log('Argh! ' + error);
-  });
-
-
-
+    }).
+	///
+ 
 	//////////////////
 	//services: ['c48e6067-5295-48d3-8d5c-0395f61792b1']
         then((device) => {
