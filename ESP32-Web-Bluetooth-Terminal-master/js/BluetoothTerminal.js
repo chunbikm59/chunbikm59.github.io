@@ -261,16 +261,7 @@ class BluetoothTerminal {
 
     this._log('Requesting bluetooth device... with service1 ' + this._serviceUuid);
 	
-    return navigator.bluetooth.requestDevice({
-		
-	  filters: [{
-        name: 'Mini-Bot'
-      }],
-      optionalServices: ['fda50693-a4e2-4fb1-afcf-c6eb07647825',
-	  0xFFE1
-	  ]
 
-    }).
 	//////////////////
 
   let options = {filters: [{name: 'Mini-Bot'}]};
