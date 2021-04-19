@@ -1,8 +1,8 @@
 'use strict';
 
-const bleNusServiceUUID  = '6e400001-b5a3-f393-e0a9-e50e24dcca9e';
-const bleNusCharRXUUID   = '6e400002-b5a3-f393-e0a9-e50e24dcca9e';
-const bleNusCharTXUUID   = '6e400003-b5a3-f393-e0a9-e50e24dcca9e';
+const bleNusServiceUUID  = '0000ffe0-0000-1000-8000-00805f9b34fb';
+const bleNusCharRXUUID   = '0000ffe1-0000-1000-8000-00805f9b34fb';
+const bleNusCharTXUUID   = '0000ffe1-0000-1000-8000-00805f9b34fb';
 const MTU = 20;
 
 var bleDevice;
