@@ -7,7 +7,7 @@ const sendForm = document.getElementById('send-form');
 const inputField = document.getElementById('input');
 
 // Helpers.
-const defaultDeviceName = 'Terminal';
+const defaultDeviceName = 'Mini-Bot';
 const terminalAutoScrollingLimit = terminalContainer.offsetHeight / 2;
 let isTerminalAutoScrolling = true;
 
