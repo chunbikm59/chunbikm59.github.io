@@ -242,8 +242,14 @@ class BluetoothTerminal {
     this._log('Requesting bluetooth device...');
 
     return navigator.bluetooth.requestDevice({
-      filters: [{services: [this._serviceUuid]},{name: 'Mini-Bot'}],
-	  //filters: [{name: 'Mini-Bot'}],
+      //filters: [{services: [this._serviceUuid]}],
+	  filters: [{name: 'Mini-Bot'}],
+	  optionalServices: [
+	  '0000ffe0-0000-1000-8000-00805f9b34fb',
+	  '00001801-0000-1000-8000-00805f9b34fb',
+	  '00001800-0000-1000-8000-00805f9b34fb',
+	  
+	  ]
 	   
     }).
         then((device) => {
