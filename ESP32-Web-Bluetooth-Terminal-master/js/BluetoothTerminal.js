@@ -266,8 +266,7 @@ class BluetoothTerminal {
 	  filters: [{
         name: 'Mini-Bot'
       }],
-      optionalServices: ['fda50693-a4e2-4fb1-afcf-c6eb07647825',
-	  0xFFF0
+      optionalServices: ['fda50693-a4e2-4fb1-afcf-c6eb07647825'
 	  ]
 
     }).
