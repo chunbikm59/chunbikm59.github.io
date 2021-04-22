@@ -103,6 +103,7 @@ display:none;
 	margin-inline: auto;
 	display:none;
 	transition: all 1s;
+    margin: 10px;
 }
 
 .toolbar_icons{
