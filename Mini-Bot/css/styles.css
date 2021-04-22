@@ -48,7 +48,7 @@ button {
 .terminal {
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-width: 1px 0;
-  flex-grow: 1;
+  height: 200px;
   overflow: auto;
   padding: 4px 0; }
   .terminal div {
@@ -75,3 +75,13 @@ button {
       color: rgba(0, 0, 0, 0.54); }
   .send-form button {
     flex-shrink: 0; }
+
+
+.rotate{
+
+    font-size: 75px;
+	
+}
+.rotate_icon{
+	font-size: 75px;
+}

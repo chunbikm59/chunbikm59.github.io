@@ -26,7 +26,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -36,20 +39,16 @@
 
             <div id="device-name" class="name">Terminal</div>
 
-            <div class="buttons" style="margin:auto;">
-				<div class="row">
-					<div class="col-sm-6">
-						<button id="connect" type="button" aria-label="Connect">
-							<i class="material-icons">bluetooth_connected</i>
-						</button>
-					</div>
+            <div class="buttons">
 
-					<div class="col-sm-6">
-						<button id="disconnect" type="button" aria-label="Disconnect">
-							<i class="material-icons">bluetooth_disabled</i>
-						</button>
-					</div>
-				</div>
+                <button id="connect" type="button" aria-label="Connect">
+                    <i class="material-icons">bluetooth_connected</i>
+                </button>
+
+                <button id="disconnect" type="button" aria-label="Disconnect">
+                    <i class="material-icons">bluetooth_disabled</i>
+                </button>
+
             </div>
 
         </div>
@@ -65,8 +64,21 @@
             </button>
 
         </form>
-
+		<div class="row" style="margin:auto;">
+			<div class="col-sm-6">
+				<button id="redo" type="button" class='rotate'>
+					<span class="material-icons rotate_icon">redo</span>
+				</button>
+			</div>
+			<div class="col-sm-6">
+				<button id="undo" type="button" class='rotate'>
+					<span class="material-icons rotate_icon">undo</span>
+				</button>
+			</div>
+		</div>
     </div>
+
+	
 
     <script src="js/BluetoothTerminal.js"></script>
     <script src="js/main.js"></script>
