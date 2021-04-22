@@ -46,6 +46,7 @@ button {
       float: left; }
 
 .terminal {
+display:none;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-width: 1px 0;
   height: 200px;

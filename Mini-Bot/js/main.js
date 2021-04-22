@@ -66,14 +66,14 @@ disconnectButton.addEventListener('click', () => {
   deviceNameLabel.textContent = defaultDeviceName;
 });
 
-sendForm.addEventListener('submit', (event) => {
-  event.preventDefault();
+// sendForm.addEventListener('submit', (event) => {
+  // event.preventDefault();
 
-  send(inputField.value);
+  // send(inputField.value);
 
-  //inputField.value = '';
-  inputField.focus();
-});
+  // inputField.value = '';
+  // inputField.focus();
+// });
 
 // Switch terminal auto scrolling if it scrolls out of bottom.
 terminalContainer.addEventListener('scroll', () => {
@@ -83,3 +83,47 @@ terminalContainer.addEventListener('scroll', () => {
   isTerminalAutoScrolling = (scrollTopOffset < terminalContainer.scrollTop);
 });
 
+	$(document).ready(function() {
+		$('#settings').on( "click", function() {
+			if($('#settings_btn').css('display')!='none'){
+				$('#settings_btn').css('display','none');
+			}
+			else{
+				$('#settings_btn').css('display','block');
+			}
+			  
+		});
+		
+		$('#rotate_right').on( "click", function() {
+		  event.preventDefault();
+		  send("on");
+		});
+		$('#rotate_left').on( "click", function() {
+		  event.preventDefault();
+		  send("off");
+		});
+		$('#RightP10').on( "click", function() {
+		  event.preventDefault();
+		  send("r+10");
+		});
+		$('#RightD10').on( "click", function() {
+		  event.preventDefault();
+		  send("r-10");
+		});
+		$('#LeftP10').on( "click", function() {
+		  event.preventDefault();
+		  send("l+10");
+		});
+		$('#LeftD10').on( "click", function() {
+		  event.preventDefault();
+		  send("l-10");
+		});
+		$('#Sleep').on( "click", function() {
+		  event.preventDefault();
+		  send("sleep");
+		});
+		$('#Reset').on( "click", function() {
+		  event.preventDefault();
+		  send("reset");
+		});
+	});

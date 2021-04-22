@@ -56,7 +56,7 @@
 
         </div>
 
-        <!-- <div id="terminal" class="terminal"></div> -->
+        <div id="terminal" class="terminal"></div>
 
         <!-- <form id="send-form" class="send-form"> -->
 
@@ -70,7 +70,7 @@
 
 		<div id="settings_btn" >
 			<div class="row " >
-				<div class="col-xs-3">
+				<div class="col-xs-2">
 					<div>
 						<button id="RightP10" type="button" class=''>
 							<span class="material-icons rotate_icon setting">forward_10</span>
@@ -78,13 +78,13 @@
 						<div class="icon_label">Right+10</div>
 					</div>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-2">
 					<button id="RightD10" type="button" class=''>
 						<span class="material-icons rotate_icon setting">replay_10</span>
 					</button>
 					<div class="icon_label">Right-10</div>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-2">
 					<div>
 						<button id="LeftP10" type="button" class=''>
 							<span class="material-icons rotate_icon setting">forward_10</span>
@@ -92,19 +92,19 @@
 						<div class="icon_label">Left+10</div>
 					</div>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-2">
 					<button id="LeftD10" type="button" class=''>
 						<span class="material-icons rotate_icon setting">replay_10</span>
 					</button>
 					<div class="icon_label">Left-10</div>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-2">
 					<button id="Sleep" type="button" class=''>
 						<span class="material-icons setting">nightlight</span>
 					</button>
 					<div class="icon_label">Sleep</div>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-2">
 					<button id="Reset" type="button" class=''>
 						<span class="material-icons setting">restart_alt</span>
 					</button>
@@ -132,52 +132,8 @@
     <script src="js/main.js"></script>
     <script src="js/companion.js" data-service-worker="sw.js"></script>
 	<script>
-	$(document).ready(function() {
-		$('#settings').on( "click", function() {
-			if($('#settings_btn').css('display')!='none'){
-				$('#settings_btn').css('display','none');
-			}
-			else{
-				$('#settings_btn').css('display','block');
-			}
-			  
-		});
-		
-		$('#rotate_right').on( "click", function() {
-		  event.preventDefault();
-		  send("on");
-		});
-		$('#rotate_left').on( "click", function() {
-		  event.preventDefault();
-		  send("off");
-		});
-		$('#RightP10').on( "click", function() {
-		  event.preventDefault();
-		  send("r+10");
-		});
-		$('#RightD10').on( "click", function() {
-		  event.preventDefault();
-		  send("r-10");
-		});
-		$('#LeftP10').on( "click", function() {
-		  event.preventDefault();
-		  send("l+10");
-		});
-		$('#LeftD10').on( "click", function() {
-		  event.preventDefault();
-		  send("l-10");
-		});
-		$('#Sleep').on( "click", function() {
-		  event.preventDefault();
-		  send("sleep");
-		});
-		$('#Reset').on( "click", function() {
-		  event.preventDefault();
-		  send("reset");
-		});
-	});
-	
-	send(inputField.value);
+
+
 	</script>
 </body>
 </html>
