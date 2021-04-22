@@ -104,6 +104,6 @@ button {
 	transition: all 1s;
 }
 
-.toolbar->material-icons{
-	
+.toolbar_icons{
+	font-size:35px;
 }
