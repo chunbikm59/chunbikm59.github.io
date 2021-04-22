@@ -46,7 +46,7 @@ button {
       float: left; }
 
 .terminal {
-display:none;
+	
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-width: 1px 0;
   height: 200px;
@@ -79,9 +79,9 @@ display:none;
 
 
 .rotate{
+	padding:10px;
 
-    font-size: 75px;
-	margin: 20px;
+	margin: 30px;
 }
 .rotate_icon{
 	font-size: 75px;
@@ -103,7 +103,8 @@ display:none;
 	margin-inline: auto;
 	display:none;
 	transition: all 1s;
-    margin: 15px;
+    margin: auto;
+	    
 }
 
 .toolbar_icons{
@@ -112,4 +113,12 @@ display:none;
 .icon_label{
 	margin:auto;
 	width: fit-content;
+}
+button:focus{ 
+    outline:none !important; 
+} 
+
+.row{
+	margin-left:0px;
+	margin-right:0px;
 }
