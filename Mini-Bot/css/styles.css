@@ -99,6 +99,7 @@ button {
 	
 }
 #settings_btn{
+	margin-inline: auto;
 	display:none;
 	transition: all 1s;
 }
