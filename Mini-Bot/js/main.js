@@ -108,7 +108,7 @@ terminalContainer.addEventListener('scroll', () => {
 		});
 		$('#RightD10').on( "click", function() {
 		  event.preventDefault();
-		  send("r-10");
+		  send("r+-10");
 		});
 		$('#LeftP10').on( "click", function() {
 		  event.preventDefault();
@@ -116,7 +116,7 @@ terminalContainer.addEventListener('scroll', () => {
 		});
 		$('#LeftD10').on( "click", function() {
 		  event.preventDefault();
-		  send("l-10");
+		  send("l+-10");
 		});
 		$('#Sleep').on( "click", function() {
 		  event.preventDefault();
