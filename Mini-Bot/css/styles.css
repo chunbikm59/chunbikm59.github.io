@@ -107,3 +107,7 @@ button {
 .toolbar_icons{
 	font-size:35px;
 }
+.icon_label{
+	margin:auto;
+	width: fit-content;
+}

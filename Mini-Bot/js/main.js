@@ -71,7 +71,7 @@ sendForm.addEventListener('submit', (event) => {
 
   send(inputField.value);
 
-  inputField.value = '';
+  //inputField.value = '';
   inputField.focus();
 });
 
