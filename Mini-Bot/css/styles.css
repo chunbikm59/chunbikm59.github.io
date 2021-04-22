@@ -25,8 +25,8 @@ button {
   margin: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 9px;
+  padding-right: 9px;
   transition: background 0.3s, color 0.3s;
   user-select: none; }
   button:active {
@@ -103,7 +103,7 @@ button {
     border-radius: 10px;
 	
 }
-#settings_btn{
+#setting_btns{
 	margin-inline: auto;
 	padding: 20px;
 	display:none;
@@ -126,4 +126,10 @@ button:focus{
 .row{
 	margin-left:0px;
 	margin-right:0px;
+}
+.setting_btn{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	
 }

@@ -85,11 +85,11 @@ terminalContainer.addEventListener('scroll', () => {
 
 	$(document).ready(function() {
 		$('#settings').on( "click", function() {
-			if($('#settings_btn').css('display')!='none'){
-				$('#settings_btn').css('display','none');
+			if($('#setting_btns').css('display')!='none'){
+				$('#setting_btns').css('display','none');
 			}
 			else{
-				$('#settings_btn').css('display','block');
+				$('#setting_btns').css('display','block');
 			}
 			  
 		});
