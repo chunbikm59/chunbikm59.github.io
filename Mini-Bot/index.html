@@ -49,30 +49,61 @@
                     <i class="material-icons">bluetooth_disabled</i>
                 </button>
 
+				<button id="settings" type="button" class=''>
+					<span class="material-icons ">settings</span>
+				</button>
             </div>
 
         </div>
 
-        <div id="terminal" class="terminal"></div>
+        <!-- <div id="terminal" class="terminal"></div> -->
 
-        <form id="send-form" class="send-form">
+        <!-- <form id="send-form" class="send-form"> -->
 
-            <input id="input" type="text" aria-label="Input" autocomplete="off" placeholder="Type something to send...">
+            <!-- <input id="input" type="text" aria-label="Input" autocomplete="off" placeholder="Type something to send..."> -->
 
-            <button type="submit" aria-label="Send">
-                <i class="material-icons">send</i>
-            </button>
+            <!-- <button type="submit" aria-label="Send"> -->
+                <!-- <i class="material-icons">send</i> -->
+            <!-- </button> -->
 
-        </form>
-		<div class="row" style="margin:auto;">
+        <!-- </form> -->
+
+		<div id="settings_btn" >
+			<div class="row " >
+				<div class="col-xs-3">
+					<div>
+						<button id="" type="button" class=''>
+							<span class="material-icons rotate_icon setting">forward_10</span>
+						</button>
+						
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<button id="" type="button" class=''>
+						<span class="material-icons rotate_icon setting">replay_10</span>
+					</button>
+				</div>
+				<div class="col-xs-3">
+					<button id="" type="button" class=''>
+						<span class="material-icons setting">nightlight</span>
+					</button>
+				</div>
+				<div class="col-xs-3">
+					<button id="" type="button" class=''>
+						<span class="material-icons setting">restart_alt</span>
+					</button>
+				</div>
+			</div>
+		</div>	
+		<div class="row" style="margin: auto;">
 			<div class="col-xs-6">
 				<button id="redo" type="button" class='rotate'>
-					<span class="material-icons rotate_icon">redo</span>
+					<span class="material-icons rotate_icon">rotate_right</span>
 				</button>
 			</div>
 			<div class="col-xs-6">
 				<button id="undo" type="button" class='rotate'>
-					<span class="material-icons rotate_icon">undo</span>
+					<span class="material-icons rotate_icon">rotate_left</span>
 				</button>
 			</div>
 		</div>
@@ -83,6 +114,13 @@
     <script src="js/BluetoothTerminal.js"></script>
     <script src="js/main.js"></script>
     <script src="js/companion.js" data-service-worker="sw.js"></script>
-
+	<script>
+	$(document).ready(function() {
+		$('#settings').on( "click", function() {
+		  $('#settings_btn').css('display','block');
+		});
+	});
+	
+	</script>
 </body>
 </html>

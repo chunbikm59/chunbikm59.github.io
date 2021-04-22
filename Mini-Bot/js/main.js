@@ -82,3 +82,4 @@ terminalContainer.addEventListener('scroll', () => {
 
   isTerminalAutoScrolling = (scrollTopOffset < terminalContainer.scrollTop);
 });
+

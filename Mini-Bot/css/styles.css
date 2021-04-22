@@ -80,8 +80,26 @@ button {
 .rotate{
 
     font-size: 75px;
-	
+	margin: 20px;
 }
 .rotate_icon{
 	font-size: 75px;
+    padding: 15px;
+
+    background-color: #F2F3F4;
+    border-radius: 10px;
+}
+.setting{
+	font-size: 30px;
+    padding: 15px;
+
+
+    background-color: #F2F3F4;
+    border-radius: 10px;
+	
+}
+#settings_btn{
+	margin-inline: auto;
+	display:none;
+	transition: all 1s;
 }
