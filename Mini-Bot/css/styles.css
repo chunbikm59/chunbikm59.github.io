@@ -81,7 +81,8 @@ button {
 .rotate{
 	padding:10px;
 
-	margin: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
 }
 .rotate_icon{
 	font-size: 75px;
@@ -101,9 +102,10 @@ button {
 }
 #settings_btn{
 	margin-inline: auto;
+	padding: 20px;
 	display:none;
 	transition: all 1s;
-    margin: auto;
+
 	    
 }
 
