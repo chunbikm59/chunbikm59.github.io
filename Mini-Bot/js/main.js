@@ -104,11 +104,11 @@ terminalContainer.addEventListener('scroll', () => {
 		});
 		$('#RightP10').on( "click", function() {
 		  event.preventDefault();
-		  send("r+10");
+		  send("r+-10");
 		});
 		$('#RightD10').on( "click", function() {
 		  event.preventDefault();
-		  send("r+-10");
+		  send("r+10");
 		});
 		$('#LeftP10').on( "click", function() {
 		  event.preventDefault();
