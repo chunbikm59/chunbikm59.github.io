@@ -121,7 +121,8 @@ terminalContainer.addEventListener('scroll', () => {
 		$('#Sleep').on( "click", function() {
 		  event.preventDefault();
 		  send("sleep");
-		  terminal.disconnect();
+		  setTimeout(function(){ terminal.disconnect(); }, 3000);
+		  
 		});
 		$('#Reset').on( "click", function() {
 		  event.preventDefault();
