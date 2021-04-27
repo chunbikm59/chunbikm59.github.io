@@ -65,6 +65,7 @@ connectButton.addEventListener('click', () => {
 });
 
 disconnectButton.addEventListener('click', () => {
+	event.preventDefault();
   send("sleep");
   terminal.disconnect();
   deviceNameLabel.textContent = defaultDeviceName;
