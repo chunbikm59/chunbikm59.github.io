@@ -65,6 +65,7 @@ connectButton.addEventListener('click', () => {
 });
 
 disconnectButton.addEventListener('click', () => {
+  send("sleep");
   terminal.disconnect();
   deviceNameLabel.textContent = defaultDeviceName;
 });
@@ -123,7 +124,8 @@ terminalContainer.addEventListener('scroll', () => {
 		});
 		$('#Sleep').on( "click", function() {
 		  event.preventDefault();
-		  send("sleep")( terminal.disconnect());
+		  send("sleep");
+		  terminal.disconnect();
 		 
 		  
 		});
