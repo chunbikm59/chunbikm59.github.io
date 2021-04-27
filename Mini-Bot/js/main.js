@@ -50,6 +50,9 @@ const send = (data) => {
   terminal.send(data).
       then(() => logToTerminal(data, 'out')).
       catch((error) => logToTerminal(error));
+	// if(data='sleep'){
+		
+	// }
 };
 
 // Bind event listeners to the UI elements.
@@ -120,8 +123,8 @@ terminalContainer.addEventListener('scroll', () => {
 		});
 		$('#Sleep').on( "click", function() {
 		  event.preventDefault();
-		  send("sleep");
-		  setTimeout(function(){ terminal.disconnect(); }, 3000);
+		  send("sleep")( terminal.disconnect(););
+		 
 		  
 		});
 		$('#Reset').on( "click", function() {
