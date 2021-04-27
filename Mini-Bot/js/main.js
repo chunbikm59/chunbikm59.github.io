@@ -123,7 +123,7 @@ terminalContainer.addEventListener('scroll', () => {
 		});
 		$('#Sleep').on( "click", function() {
 		  event.preventDefault();
-		  send("sleep")( terminal.disconnect(););
+		  send("sleep")( terminal.disconnect());
 		 
 		  
 		});
