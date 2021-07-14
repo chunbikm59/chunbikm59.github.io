@@ -34,6 +34,9 @@ const terminal = new BluetoothTerminal();
 // Override `receive` method to log incoming data to the terminal.
 terminal.receive = function(data) {
   logToTerminal(data, 'in');
+  if(data=="good night"){
+	  terminal.disconnect();
+  }
 };
 
 // Override default log method to output messages to the terminal and console.
@@ -126,7 +129,7 @@ terminalContainer.addEventListener('scroll', () => {
 		$('#Sleep').on( "click", function() {
 		  event.preventDefault();
 		  send("sleep");
-		  terminal.disconnect();
+		  
 		 
 		  
 		});
