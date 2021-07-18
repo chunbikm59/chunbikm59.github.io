@@ -9,7 +9,7 @@ class BluetoothTerminal {
    * @param {string} [receiveSeparator='\n'] - Receive separator
    * @param {string} [sendSeparator='\n'] - Send separator
    */
-  constructor(serviceUuid = '0000fff0-0000-1000-8000-00805f9b34fb', characteristicUuid = '0000ffe1-0000-1000-8000-00805f9b34fb',
+  constructor(serviceUuid = '0000ffe0-0000-1000-8000-00805f9b34fb', characteristicUuid = '0000ffe1-0000-1000-8000-00805f9b34fb',
       receiveSeparator = '\n', sendSeparator = '\n') {
     // Used private variables.
     this._receiveBuffer = ''; // Buffer containing not separated data.
@@ -243,8 +243,7 @@ class BluetoothTerminal {
 
     return navigator.bluetooth.requestDevice({
       filters: [
-        {namePrefix: 'Mini'}
-        // // {services: [0xFFF0]},
+        {services: [0xFFF0]},
         // {services: [0xFFF0, 0xFFE0]},
         // {services: [0xFFE0]},
       ],
