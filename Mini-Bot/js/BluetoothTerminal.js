@@ -243,7 +243,7 @@ class BluetoothTerminal {
 
     return navigator.bluetooth.requestDevice({
       filters: [
-        {services: [0xFFF0]},
+        // {services: [0xFFF0]},
         // {services: [0xFFF0, 0xFFE0]},
         // {services: [0xFFE0]},
       ],
@@ -255,7 +255,7 @@ class BluetoothTerminal {
 	  '0000ffe0-0000-1000-8000-00805f9b34fb',
 	  '00001801-0000-1000-8000-00805f9b34fb',
 	  '00001800-0000-1000-8000-00805f9b34fb',
-	  
+	  0xFFF0
 	  ]
 	   
     }).
@@ -288,7 +288,7 @@ class BluetoothTerminal {
         then((server) => {
           this._log('GATT server connected', 'Getting service...');
 
-          return server.getPrimaryService(this._serviceUuid);
+          return server.getPrimaryService(0xFFE0);
         }).
         then((service) => {
           this._log('Service found', 'Getting characteristic...');
